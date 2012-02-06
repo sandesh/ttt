@@ -1,0 +1,59 @@
+++++++++++++++++++
+++++ ver 0.9b ++++
+++++++++++++++++++
+
+======
+Intro
+======
+
+TTT is a web-based Tic-Tac-Toe game written in ruby and crudely implemented with Ruby on Rails.
+
+The game code logic is in the "engine" folder where each file represents a class:
+	game.rb
+	board.rb
+	player.rb
+	
+and  all classes are grouped under a single namespace (module) - TTTLogic
+
+"Player" is a superclass for "Human" and "AI" classes.
+
+Implementation of minimax is inspired by Dr. C. Barski's "Land of Lisp : learn to program in Lisp, one game at a time!"
+
+
+===================
+Current Limitations
+===================
+1. Stores an instance of the game in session cookies
+2. AI always starts first
+3. User is always "X"
+4. Reloads the page to get URL param to identify human's move. It should probably be fully implemented w/ .js ajax
+
+
+======================
+Description of Classes
+======================
+
+"Board" class attributes and methods:
+	
+	size - defaults to 3 and represents the size of the board - 3x3
+	field - an array of size^2 that represents a snapshot of players' tile positions on the board
+	all_moves - a growing array that holds a tile # for each move made
+	
+	mark_tile - represents a "move" made by a player
+	unmark_last_tile - undo of last mark_tile
+	winner_mark - returns a mark that won the game
+	draw? - if the game is a draw
+	gameover? - if the game is finished we have a winner or it is a draw
+
+"AI" a subclass of Player:
+	
+	marks tiles with "O"
+	max_move, min_move , score_rank - an implementation of minimax game tree algorithm 
+	move - marking a position calculated by minimax
+	
+	
+
+
+
+
+

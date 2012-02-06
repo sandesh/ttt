@@ -1,0 +1,15 @@
+<script type="text/javascript">ttt.setCurrentMark("<%= @current_game && @current_game.current_player.mark.downcase %>");</script>
+
+<div id="wrapper">
+	
+	<div id = "restart">
+		<%= generate_play_again.html_safe %>
+	</div>	 	
+	
+	<div id="board">
+	   <%= generate_state.html_safe %>
+	  <p><%= generate_board.html_safe %></p>
+	
+	</div>
+	
+</div>

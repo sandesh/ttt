@@ -1,0 +1,63 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background: #f0ebce url(http://www.sandesh.me/wp-content/themes/sandeshme/images/canvas/bg.jpg);
+  font-family: Georgia, Arial, Sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  padding: 0;
+}
+
+#wrapper {
+  margin: auto;
+  width: 751px;
+  margin-top: 70px;
+}
+
+a{
+  color: #3B3A40;
+}
+a:hover{
+  color: #3B3A40;
+  text-decoration: none;
+}
+
+.select{
+  padding-left: 50px;
+}
+
+#tile {
+  margin-right: 10px
+}
+
+#state {
+  display: block;
+  position: fixed;
+  clear: none;
+  text-align: center;
+
+}
+
+#content {
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#board {
+  width: 543px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+#button {
+  padding-left: 200px;
+  
+}
+#restart {
+  position:absolute;
+  right:350px;
+}
